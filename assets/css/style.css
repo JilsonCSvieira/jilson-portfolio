@@ -1,6 +1,10 @@
-/* ===============================
-   JILSON VIEIRA — PORTFOLIO
-   =============================== */
+/* ===================================
+   JILSON VIEIRA PORTFOLIO
+=================================== */
+
+/* ===================================
+   RESET
+=================================== */
 
 * {
     margin: 0;
@@ -8,19 +12,30 @@
     box-sizing: border-box;
 }
 
+/* ===================================
+   VARIABLES
+=================================== */
+
 :root {
     --bg: #0a0e17;
     --surface: #111827;
     --surface-2: #162032;
+
     --text: #e2e8f0;
     --muted: #94a3b8;
+
     --accent: #00c2ff;
     --accent-2: #7c3aed;
+
     --border: #1e2d40;
 
     --font-main: "Space Grotesk", sans-serif;
     --font-code: "JetBrains Mono", monospace;
 }
+
+/* ===================================
+   GLOBAL
+=================================== */
 
 html {
     scroll-behavior: smooth;
@@ -34,80 +49,209 @@ body {
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
-/* ===============================
-   LAYOUT
-================================ */
+img {
+    max-width: 100%;
+    display: block;
+}
 
-.container{
+/* ===================================
+   LAYOUT
+=================================== */
+
+.container {
     width: min(1120px, 90%);
     margin: 0 auto;
 }
 
-/* ===============================
+/* ===================================
    HEADER
-================================ */
+=================================== */
 
-.header{
-
+.header {
     position: sticky;
     top: 0;
-
     width: 100%;
+    z-index: 1000;
 
-    background: rgba(10,14,23,.85);
-
+    background: rgba(10, 14, 23, 0.90);
     backdrop-filter: blur(14px);
 
     border-bottom: 1px solid var(--border);
-
-    z-index: 1000;
-
 }
 
-.header .container{
-
+.nav-container {
     height: 80px;
 
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    justify-content:space-between;
+/* ===================================
+   LOGO
+=================================== */
 
-    align-items:center;
+.logo {
+    font-family: var(--font-code);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: .08em;
+}
+
+/* ===================================
+   NAVIGATION
+=================================== */
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar a {
+    color: var(--muted);
+    transition: .25s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--accent);
+}
+
+/* ===================================
+   HERO
+=================================== */
+
+.hero {
+
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+
+    align-items: center;
 
 }
 
-.logo{
+.hero-container {
 
-    font-size:1.5rem;
+    display: grid;
 
-    font-weight:700;
+    grid-template-columns: 1.2fr .8fr;
 
-    color:var(--accent);
+    align-items: center;
 
-}
-
-.navbar{
-
-    display:flex;
-
-    gap:2rem;
+    gap: 5rem;
 
 }
 
-.navbar a{
+.hero-tag {
 
-    color:var(--muted);
+    font-family: var(--font-code);
 
-    transition:.25s;
+    color: var(--accent);
+
+    font-size: .85rem;
+
+    letter-spacing: .18em;
+
+    margin-bottom: 1rem;
 
 }
 
-.navbar a:hover{
+.hero h1 {
 
-    color:var(--text);
+    font-size: clamp(3rem, 6vw, 5rem);
+
+    line-height: 1.05;
+
+    margin-bottom: 1.5rem;
 
 }
+
+.hero h1 span {
+
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--accent-2)
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero-description {
+
+    max-width: 600px;
+
+    color: var(--muted);
+
+    font-size: 1.15rem;
+
+    margin-bottom: 2rem;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+/* ===================================
+   ABOUT
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   SKILLS
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   PROJECTS
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   EXPERIENCE
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   EDUCATION
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   CONTACT
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   FOOTER
+=================================== */
+
+/* Coming next... */
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+/* Coming next... */
