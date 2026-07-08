@@ -4,7 +4,7 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## Live Site
 
-> Deploy via GitHub Pages: `Settings → Pages → Deploy from branch (main)`
+
 
 ## Features
 
@@ -24,24 +24,7 @@ Personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## Structure
 
-```
-portfolio/
-├── index.html    # Markup & content
-├── style.css     # All styles
-├── script.js     # Interactions & animations
-└── README.md
-```
-
 ## Setup
 
-Just open `index.html` in a browser — no build step needed.
-
-To deploy on GitHub Pages:
-1. Push this repo to GitHub
-2. Go to `Settings → Pages`
-3. Set source to `main` branch, root folder
-4. Your site will be live at `https://<username>.github.io/<repo-name>/`
-
----
 
 © Jilson Vieira — Quincy, MA
