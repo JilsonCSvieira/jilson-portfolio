@@ -216,7 +216,95 @@ img {
    ABOUT
 =================================== */
 
-/* Coming next... */
+.about {
+    padding: 8rem 0;
+}
+
+.section-tag {
+    font-family: var(--font-code);
+    color: var(--accent);
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    max-width: 760px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-text p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1.9;
+}
+
+.about-content{
+
+    display:grid;
+
+    grid-template-columns:1.7fr 1.3fr;
+
+    gap:4rem;
+
+    align-items:start;
+
+}
+
+.about-card{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:2rem;
+
+}
+
+.info-item{
+
+    display:flex;
+
+    gap:1rem;
+
+    align-items:center;
+
+    padding:1rem 0;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.info-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.info-item span{
+
+    font-size:1.4rem;
+
+}
+
+.info-item p{
+
+    color:var(--muted);
+
+}
 
 /* ===================================
    SKILLS
