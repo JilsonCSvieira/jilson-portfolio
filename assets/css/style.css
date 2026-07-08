@@ -37,3 +37,77 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+/* ===============================
+   LAYOUT
+================================ */
+
+.container{
+    width: min(1120px, 90%);
+    margin: 0 auto;
+}
+
+/* ===============================
+   HEADER
+================================ */
+
+.header{
+
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+
+    background: rgba(10,14,23,.85);
+
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid var(--border);
+
+    z-index: 1000;
+
+}
+
+.header .container{
+
+    height: 80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:var(--accent);
+
+}
+
+.navbar{
+
+    display:flex;
+
+    gap:2rem;
+
+}
+
+.navbar a{
+
+    color:var(--muted);
+
+    transition:.25s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--text);
+
+}
