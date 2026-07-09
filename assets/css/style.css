@@ -310,7 +310,51 @@ img {
    SKILLS
 =================================== */
 
-/* Coming next... */
+.skills {
+    padding: 8rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skill-category {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: .3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.skill-category h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text);
+    font-size: 1.3rem;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.skill-list span {
+    padding: .6rem 1rem;
+    background: rgba(0, 194, 255, .08);
+    border: 1px solid rgba(0, 194, 255, .2);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: .9rem;
+    font-family: var(--font-code);
+}
 
 /* ===================================
    PROJECTS
