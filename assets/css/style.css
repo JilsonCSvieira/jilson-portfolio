@@ -818,3 +818,75 @@ img {
     font-weight:600;
 
 }
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 900px) {
+    .nav-container {
+        height: auto;
+        padding: 1.5rem 0;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 18vw, 5rem);
+    }
+
+    .hero-card {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .about-content,
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+}
