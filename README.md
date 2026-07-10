@@ -1,30 +1,22 @@
-# Jilson Vieira — Personal Portfolio
+# 🌐 Jilson Vieira | Portfolio
 
-Personal portfolio website built with HTML, CSS, and JavaScript.
+A modern, responsive personal portfolio built with **HTML**, **CSS**, and **JavaScript** to showcase my projects, education, technical skills, and journey as a Computer Science student.
 
-## Live Site
+## 🔗 Live Website
 
+**Portfolio:** https://jilsoncsvieira.github.io/jilson-portfolio/
 
+---
 
-## Features
+## 📖 About
 
-- Responsive design (mobile + desktop)
-- Terminal typewriter animation
-- Scroll-triggered fade-in animations
-- Active nav link highlighting
-- Mobile hamburger menu
-- Sections: Hero, Tech Stack, Experience, Projects, Education, Contact
+This portfolio serves as my personal website and central hub for my software development work. It highlights my background, featured projects, technical skills, education, and professional experience.
 
-## Stack
+## 📬 Contact
 
-- HTML5
-- CSS3 (custom properties, grid, flexbox)
-- Vanilla JavaScript (no frameworks)
-- Google Fonts: Space Grotesk + JetBrains Mono
+**GitHub**
+https://github.com/JilsonCSvieira
 
-## Structure
+---
 
-## Setup
-
-
-© Jilson Vieira — Quincy, MA
+© 2026 Jilson Vieira
