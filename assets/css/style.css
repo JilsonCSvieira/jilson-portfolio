@@ -618,13 +618,99 @@ img {
    EDUCATION
 =================================== */
 
-/* Coming next... */
+.education {
+    padding: 8rem 0;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.education-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: .3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.education-date {
+    display: inline-block;
+    font-family: var(--font-code);
+    color: var(--accent);
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}
+
+.education-card h3 {
+    margin-bottom: .35rem;
+    font-size: 1.4rem;
+}
+
+.education-card h4 {
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.education-card p {
+    color: var(--muted);
+    line-height: 1.8;
+}
 
 /* ===================================
    CONTACT
 =================================== */
 
-/* Coming next... */
+.contact {
+    padding: 8rem 0;
+}
+
+.contact-description {
+    max-width: 700px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.contact-card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+    transition: .3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent);
+}
+
+.contact-card h3 {
+    margin-bottom: .75rem;
+    font-size: 1.3rem;
+}
+
+.contact-card p {
+    color: var(--muted);
+    word-break: break-word;
+}
 
 /* ===================================
    FOOTER
@@ -855,7 +941,9 @@ img {
 
     .about-content,
     .projects-grid,
-    .skills-grid {
+    .skills-grid,
+    .education-grid,
+    .contact-grid{
         grid-template-columns: 1fr;
     }
 
@@ -889,4 +977,6 @@ img {
     .card-content {
         padding: 1.5rem;
     }
+
+
 }
