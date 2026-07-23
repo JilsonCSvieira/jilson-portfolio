@@ -397,13 +397,97 @@ img {
 }
 
 .skill-list span {
-    padding: .6rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+
+    padding: .7rem 1.1rem;
+
     background: rgba(0, 194, 255, .08);
     border: 1px solid rgba(0, 194, 255, .2);
     border-radius: 999px;
+
     color: var(--accent);
+
     font-size: .9rem;
     font-family: var(--font-code);
+
+    transition: .3s ease;
+}
+
+.skill-list span i {
+    font-size: 1rem;
+}
+
+.skill-list span:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 194, 255, .15);
+    border-color: var(--accent);
+}
+
+/* ===================================
+   SKILL BRAND COLORS
+=================================== */
+
+.skill-list .java:hover {
+    color: #f89820;
+    border-color: #f89820;
+}
+
+.skill-list .javascript:hover {
+    color: #f7df1e;
+    border-color: #f7df1e;
+}
+
+.skill-list .html:hover {
+    color: #e34f26;
+    border-color: #e34f26;
+}
+
+.skill-list .css:hover {
+    color: #1572b6;
+    border-color: #1572b6;
+}
+
+.skill-list .cpp:hover {
+    color: #00599c;
+    border-color: #00599c;
+}
+
+.skill-list .sql:hover,
+.skill-list .mysql:hover {
+    color: #4479a1;
+    border-color: #4479a1;
+}
+
+.skill-list .spring:hover {
+    color: #6db33f;
+    border-color: #6db33f;
+}
+
+.skill-list .rest:hover {
+    color: #8b5cf6;
+    border-color: #8b5cf6;
+}
+
+.skill-list .git:hover {
+    color: #f05032;
+    border-color: #f05032;
+}
+
+.skill-list .github:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.skill-list .vscode:hover {
+    color: #007acc;
+    border-color: #007acc;
+}
+
+.skill-list .aws:hover {
+    color: #ff9900;
+    border-color: #ff9900;
 }
 
 /* ===================================
