@@ -19,7 +19,6 @@
 :root {
     --bg: #0a0e17;
     --surface: #111827;
-    --surface-2: #162032;
 
     --text: #e2e8f0;
     --muted: #94a3b8;
@@ -114,7 +113,7 @@ img {
 
 .navbar a {
     color: var(--muted);
-    transition: .25s ease;
+    transition: .3s ease;
 }
 
 .navbar a:hover,
@@ -199,11 +198,62 @@ img {
 .hero-buttons {
 
     display: flex;
-
+    flex-direction: column;
     gap: 1rem;
+    align-items: flex-start;
 
-    flex-wrap: wrap;
+}
 
+.hero-buttons a {
+
+    display:inline-flex;
+    align-items:center;
+    gap: .75rem;
+    justify-content:center;
+
+    min-width:230px;
+
+    padding:.95rem 1.8rem;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s ease;
+
+}
+
+.hero-buttons .btn-primary {
+    background: linear-gradient(
+        90deg,
+        var(--accent),
+        var(--accent-2)
+    );
+
+    color: white;
+}
+
+.hero-buttons .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 194, 255, .25);
+}
+
+.hero-buttons .btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+}
+
+.hero-buttons .btn-secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.hero-buttons i {
+    width: 18px;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .hero-subtitle {
@@ -490,7 +540,7 @@ img {
 .project-links a {
     color: var(--text);
     font-weight: 600;
-    transition: .25s;
+    transition: .3s ease;
 }
 
 .project-links a:hover {
@@ -757,12 +807,6 @@ img {
 }
 
 /* ===================================
-   RESPONSIVE
-=================================== */
-
-/* Coming next... */
-
-/* ===================================
    DEVELOPER CARD
 =================================== */
 
@@ -871,12 +915,10 @@ img {
 
 }
 
-.skills{
+.card-skills{
 
     display:flex;
-
     flex-direction:column;
-
     gap:1rem;
 
 }
